@@ -6,7 +6,7 @@ import bcrypt from "bcryptjs";
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
 const ADMIN_PASSWORD_HASH = process.env.ADMIN_PASSWORD_HASH || "$2a$10$X8qZ9vN8p1Y7ZxQfK6J9qunQx1wT3P0nJ5W8gJ6X8qZ9vN8p1Y7Zx"; // "admin123"
 
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
